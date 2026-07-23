@@ -9,7 +9,9 @@ import com.leonardosoares.agendadortarefas.infrastructure.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -30,5 +32,10 @@ public class TarefasService {
         return tarefaConverter.paraTarefasDTO(tarefasRepository.save(tarefasEntity));
 
     }
+
+    public List<TarefasDTO> listarTarefasPorPeriodo(LocalDate dataInicial, LocalDate dataFinal) {
+        return tarefaConverter.paraListaTarefasDTO(tarefasRepository.findByDataEventoBetween(dataInicial, dataFinal));
+    }
+
 
 }
