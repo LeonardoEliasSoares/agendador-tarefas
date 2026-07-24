@@ -15,12 +15,12 @@ public class TarefasDTO {
     private String id;
     private String nomeTarefa;
     private String descricao;
-    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape =  JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape = JsonFormat.Shape.STRING)
     private LocalDateTime dataCriacao;
-    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape =  JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape = JsonFormat.Shape.STRING)
     private LocalDateTime dataEvento;
     private String emailUsuario;
-    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape =  JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape = JsonFormat.Shape.STRING)
     private LocalDateTime dataAlteracao;
     private StatusNotificacaoEnum statusNotificacaoEnum;
 }
