@@ -25,7 +25,7 @@ public class TarefasEntity {
     @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape =  JsonFormat.Shape.STRING)
     private LocalDateTime dataCriacao;
     @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape =  JsonFormat.Shape.STRING)
-    private LocalDate dataEvento;
+    private LocalDateTime dataEvento;
     private String emailUsuario;
     @JsonFormat(pattern = "yyyy/MM/dd HH:mm:ss", shape =  JsonFormat.Shape.STRING)
     private LocalDateTime dataAlteracao;
